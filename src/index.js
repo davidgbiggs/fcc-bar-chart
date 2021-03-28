@@ -70,7 +70,7 @@ fetch(
         //    .style("top", (d3.event.pageY - 15) + "px");
         tooltip.transition().duration(50).style("opacity", 1);
       })
-      .on("mouseout", function (d, i) {
+      .on("mouseout", function () {
         d3.select(this).transition().duration("50").attr("opacity", "1");
         //Makes the new div disappear:
         tooltip.transition().duration("50").style("opacity", 0);
