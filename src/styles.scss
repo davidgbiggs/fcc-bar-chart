@@ -1,27 +1,7 @@
-// $primary-color: white;
-// $bg: black;
-// h1 {
-//   color: $primary-color;
-//   background-color: $bg;
-// }
-
-.bar {
-  fill: blue;
-  &:hover {
-    fill: lightblue;
-  }
-}
-
-div#tooltip {
-  position: absolute;
-  text-align: center;
-  padding: 0.5rem;
-  background: #ffffff;
-  color: #313639;
-  border: 1px solid #313639;
-  border-radius: 8px;
-  pointer-events: none;
-  font-size: 1.3rem;
+body,
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: slategray;
 }
 
 #app {
@@ -33,5 +13,50 @@ div#tooltip {
   height: 100vh;
 }
 
-#div-container {
+#svg-container {
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+}
+
+#chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-box-shadow: 0px 5px 13px 0px #000000;
+  box-shadow: 0px 5px 13px 0px #000000;
+  background-color: white;
+}
+
+#title {
+  font-size: 3rem;
+  font-weight: lighter;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.bar {
+  fill: rgb(18, 153, 18);
+  stroke: white;
+  stroke-width: 0.2;
+  &:hover {
+    fill: lightgreen;
+  }
+}
+
+#more-info-text {
+  align-self: flex-end;
+  padding-right: 3.5rem;
+  padding-bottom: 1rem;
+  margin-top: -2rem;
+}
+
+div#tooltip {
+  position: absolute;
+  text-align: center;
+  padding: 0.5rem;
+  background: #ffffff;
+  color: #313639;
+  border: 1px solid #313639;
+  pointer-events: none;
+  font-size: 1.3rem;
 }
