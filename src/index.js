@@ -97,4 +97,13 @@ fetch(
         // Makes the tooltip disappear:
         tooltip.transition().duration("50").style("opacity", 0);
       });
+
+    // change some elements after everything is loaded
+    const title = document.getElementById("title");
+    title.textContent = "United States GDP";
+    title.classList += "loaded";
+    document.getElementById("more-info-text").innerHTML = `More information:
+          <a target="_blank" href="http://www.bea.gov/national/pdf/nipaguid.pdf"
+            >Bureau of Economic Analysis</a
+          >`;
   });
